@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  react-dockerizer-prod:
+    container_name: react-dockerizer-prod
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - "8877:80"
